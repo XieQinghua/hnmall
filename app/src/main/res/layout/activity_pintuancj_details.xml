@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_layout_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_pintuancj_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_goods_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icon_padding"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_goods_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="拼团抽奖奖品2"
+                    android:textColor="@color/mall_title_color"
+                    android:textSize="@dimen/font_size_middle" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btn_palered_rectangle_shape"
+                    android:gravity="center"
+                    android:text="抽奖"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_middle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_pintuan_rule1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="拼团抽奖规则"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_check"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_red_normal_shape"
+                    android:gravity="center"
+                    android:text="查看已中奖人名单"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_middle" />
+
+                <TextView
+                    android:id="@+id/tv_sold_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="已售：11件"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_small" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_pintuan_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:text="活动时间"
+                android:textColor="@color/paleRed"
+                android:textSize="@dimen/font_size_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/icon_padding"
+                android:layout_marginTop="@dimen/icon_padding"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_str1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. 每个团凑齐2人支付后，拼团成功，当即开奖，中奖者随机抽取，公开透明，中奖率为100%；"
+                    android:textColor="@color/mall_content_color"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_str2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2. 一等奖为拼团抽奖奖品2，（剩余209份，中奖几率50%），发货时间为拼团成功后48小时内；二等奖为拼团抽奖奖品（中奖几率50%），中奖后请进入“个人中心——优惠券”查看；"
+                    android:textColor="@color/mall_content_color"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_str3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="3. 无论拼团成功与否，本活动都不予退款；"
+                    android:textColor="@color/mall_content_color"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_str4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="4. 当团购时间结束，或剩余开奖团名额为0时，整个活动结束，不能再进行参团，开团等操作，请抓紧邀请伙伴参团。"
+                    android:textColor="@color/mall_content_color"
+                    android:textSize="@dimen/font_size_small" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/canvasGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_pintuan_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支付开团并邀请1人参团，详见下方拼团抽奖流程"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/icon_padding"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_pintuancj_buy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_pintuan_group_bg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_activity_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_middle" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pintuancj_single_buy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_pintuan_single_bg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_middle" />
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="单独购买 >"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/canvasGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_pintuancj_activity_flow">
+
+                <TextView
+                    android:id="@+id/tv_pintuan_rule2"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/canvasGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding">
+
+                <ImageView
+                    android:id="@+id/iv_shop_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_gray_rectangle_shape"
+                    android:padding="1dp"
+                    android:src="@drawable/img_default_goods" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_descript"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/mall_content_color"
+                        android:textSize="@dimen/font_size_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_collect_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_pressed_shape"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="收藏店铺"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_middle" />
+
+                <TextView
+                    android:id="@+id/tv_enter_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_pressed_shape"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="进入店铺"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_middle" />
+            </LinearLayout>
+
+            <View
+                style="@style/Line"
+                android:layout_marginLeft="@dimen/icon_padding" />
+
+            <WebView
+                android:id="@+id/wap_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+
+        </LinearLayout>
+    </com.your.mall.view.ElasticityScrollView>
+
+</RelativeLayout>

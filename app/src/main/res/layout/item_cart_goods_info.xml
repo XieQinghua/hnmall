@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/cb_goods"
+            style="@style/CartCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:focusable="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_normal" />
+
+        <FrameLayout
+            android:id="@+id/fl_img_info"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/cb_goods">
+
+            <ImageView
+                android:id="@+id/iv_goods_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_default_goods" />
+
+            <ImageView
+                android:id="@+id/iv_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_goods_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/fl_img_info"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="新西兰爱妃苹果"
+                android:textColor="@color/mall_secondary_title"
+                android:textSize="@dimen/font_size_middle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥79.00"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_middle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_promotions_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/icon_padding"
+                    android:text="单品免邮"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_middle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.your.mall.view.AmountView
+            android:id="@+id/amount_view"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fl_img_info"
+            android:layout_below="@+id/ll_goods_info"
+            app:btnTextSize="@dimen/font_size_middle"
+            app:btnWidth="24dp"
+            app:tvWidth="30dp" />
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_goods_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fl_img_info"
+            android:background="@drawable/btn_rectangle_shape"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1px"
+                android:src="@drawable/icon_jian" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="1"
+                android:textColor="@color/mall_content_color"
+                android:textSize="@dimen/font_size_normal" />
+
+            <ImageView
+                android:id="@+id/iv_jia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1px"
+                android:src="@drawable/icon_jia" />
+        </LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/iv_cart_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_goods_info"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_cart_remove" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_promotion_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_pressed_shape"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="优惠活动"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_middle" />
+
+        <TextView
+            android:id="@+id/tv_promotion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="满4件享9折"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_middle" />
+    </LinearLayout>
+</LinearLayout>

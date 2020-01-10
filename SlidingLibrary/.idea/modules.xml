@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SlidingLibrary.iml" filepath="$PROJECT_DIR$/SlidingLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../happyi/happyi.iml" filepath="$PROJECT_DIR$/../happyi/happyi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../klandroid.iml" filepath="$PROJECT_DIR$/../klandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../library/library.iml" filepath="$PROJECT_DIR$/../library/library.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\code\\hnmall\\SlidingLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\code\\hnmall\\SlidingLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "1008",
+                        "endColumns": "42",
+                        "endOffsets": "1046"
+                    }
+                }
+            ]
+        }
+    ]
+}

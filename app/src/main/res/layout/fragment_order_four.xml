@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray">
+
+    <LinearLayout
+        android:id="@+id/ll_order_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_order_empty"
+            style="@style/mall_normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/icon_no_order"
+            android:text="您还没有订单噢，赶紧去逛逛~"
+            android:textSize="@dimen/font_size_middle"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_stroll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_top_bar"
+            android:layout_below="@+id/tv_cart_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_red_pressed_shape"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="去逛逛"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal" />
+
+    </LinearLayout>
+
+    <com.your.mall.view.XList.XListView
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp" />
+
+</RelativeLayout>

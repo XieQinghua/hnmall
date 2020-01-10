@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cache"
+                style="@style/mall_normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_cache"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:text="清除缓存" />
+
+            <!--分隔线-->
+            <View style="@style/Line" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                style="@style/mall_normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_about"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:text="关于我们" />
+
+            <!--分隔线-->
+            <View style="@style/Line" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                style="@style/mall_normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_telephone"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:text="联系客服" />
+
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_top_bar"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_red_selector"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+    </com.your.mall.view.ElasticityScrollView>
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_head" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_layout_title"
+        android:layout_marginBottom="45dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_order_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_address_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="50dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="请添加收获地址"
+                    android:textColor="@color/mall_secondary_title"
+                    android:textSize="@dimen/font_size_middle"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_consignee_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/icon_padding"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_order_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_order_address" />
+
+                    <TextView
+                        android:id="@+id/tv_consignee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/iv_order_address"
+                        android:textColor="@color/mall_secondary_title"
+                        android:textSize="@dimen/font_size_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toRightOf="@+id/tv_consignee"
+                        android:textColor="@color/mall_secondary_title"
+                        android:textSize="@dimen/font_size_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_consignee"
+                        android:layout_below="@+id/tv_consignee"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/mall_content_color"
+                        android:textSize="@dimen/font_size_small" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/Line" />
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="10dp" />
+
+            <!--店铺list-->
+            <com.your.mall.view.MyListView
+                android:id="@+id/lv_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="10dp" />
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="@dimen/icon_padding" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/icon_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台优惠"
+                    android:textColor="@color/mall_secondary_title"
+                    android:textSize="@dimen/font_size_middle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/icon_arrow"
+                    android:text="不使用优惠券"
+                    android:textColor="@color/mall_secondary_title"
+                    android:textSize="@dimen/font_size_middle" />
+            </RelativeLayout>
+
+            <View
+                style="@style/Line"
+                android:visibility="gone" />
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="@dimen/icon_padding"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/icon_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="送货时间"
+                    android:textColor="@color/mall_secondary_title"
+                    android:textSize="@dimen/font_size_middle" />
+
+                <RadioGroup
+                    android:id="@+id/rg_send_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_workaday"
+                        style="@style/CartCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingLeft="5dp"
+                        android:text="仅工作日送货"
+                        android:textColor="@color/mall_secondary_title"
+                        android:textSize="@dimen/font_size_middle" />
+
+                    <RadioButton
+                        android:id="@+id/rb_holidays"
+                        style="@style/CartCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="仅节假日送货"
+                        android:textColor="@color/mall_secondary_title"
+                        android:textSize="@dimen/font_size_middle" />
+
+                    <RadioButton
+                        android:id="@+id/rb_unlimited"
+                        style="@style/CartCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="送货时间不限"
+                        android:textColor="@color/mall_secondary_title"
+                        android:textSize="@dimen/font_size_middle" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <View style="@style/Line" />
+        </LinearLayout>
+
+    </com.your.mall.view.ElasticityScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_amount_payable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/nav_gray_bg"
+            android:gravity="center"
+            android:text="应付金额：￥0.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/nbhRed"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal" />
+
+    </LinearLayout>
+</RelativeLayout>

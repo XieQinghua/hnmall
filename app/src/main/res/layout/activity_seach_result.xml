@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/nbhRed">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="back"
+            android:padding="@dimen/icon_padding"
+            android:src="@drawable/arrow_header"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/btn_darkred_rectangle_shape">
+            <!--第一个EditText是获得焦点的，解决办法，
+            增加一个不显示的view强制获得焦点，使EditText初始不弹出软键盘-->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusableInTouchMode="true" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_edit_search"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_goods"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="6dp"
+                android:paddingRight="30dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/font_size_middle" />
+
+            <ImageView
+                android:id="@+id/iv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_edit_del"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.your.mall.view.XList.XListView
+        android:id="@+id/lv_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@color/canvasGray"
+        android:dividerHeight="1px"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_no_product"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/img_no_product"
+        android:visibility="gone" />
+
+</LinearLayout>

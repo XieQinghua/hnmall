@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <com.your.mall.view.XList.XListView
+        android:id="@+id/lv_zuji"
+        android:layout_below="@+id/rl_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@color/canvasGray"
+        android:dividerHeight="1px"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_no_collect"
+        style="@style/mall_normal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="15dp"
+        android:drawableTop="@drawable/icon_no_collect"
+        android:text="暂无足迹历史"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_middle"
+        android:visibility="gone" />
+
+</RelativeLayout>

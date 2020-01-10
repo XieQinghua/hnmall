@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.your.mall.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            android:background="@color/white"
+            android:orientation="vertical"></LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/main_radiogroup"
+            android:background="@color/darkGray" />
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/canvasGray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maintabs_radio_home"
+                style="@style/MainRadioButtonTheme"
+                android:checked="true"
+                android:drawableTop="@drawable/main_home_bg"
+                android:text="@string/main_home"
+                android:textColor="@color/main_nav_text_color" />
+
+            <RadioButton
+                android:id="@+id/maintabs_radio_class"
+                style="@style/MainRadioButtonTheme"
+                android:drawableTop="@drawable/main_class_bg"
+                android:text="@string/main_class"
+                android:textColor="@color/main_nav_text_color" />
+
+            <RadioButton
+                android:id="@+id/maintabs_radio_shopping"
+                style="@style/MainRadioButtonTheme"
+                android:drawableTop="@drawable/main_shopping_bg"
+                android:text="@string/main_shopping"
+                android:textColor="@color/main_nav_text_color" />
+
+            <RadioButton
+                android:id="@+id/maintabs_radio_center"
+                style="@style/MainRadioButtonTheme"
+                android:drawableTop="@drawable/main_center_bg"
+                android:text="@string/main_center"
+                android:textColor="@color/main_nav_text_color" />
+        </RadioGroup>
+
+        <!-- 实现提醒信息用的 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+            <!-- 显示提醒信息的button android:layout_weight=1  是4个TextView，平分手机界面的宽度-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:focusable="false"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false">
+
+                <TextView
+                    android:id="@+id/tv_cart_num"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/circle_red_shape"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_shop_logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/btn_gray_rectangle_shape"
+            android:padding="1dp"
+            android:src="@drawable/img_default_goods" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_shop_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="友阿果园"
+                android:textColor="@color/mall_content_color"
+                android:textSize="@dimen/font_size_middle" />
+
+            <TextView
+                android:id="@+id/tv_shop_descript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text="友阿果园为友阿农博汇自有品牌"
+                android:textColor="@color/mall_content_color"
+                android:textSize="@dimen/font_size_middle" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_shop_logo"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_product_collection_hight" />
+
+    </RelativeLayout>
+
+</LinearLayout>

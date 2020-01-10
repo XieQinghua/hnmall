@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">友阿农博汇</string>
+    <string name="settings">设置</string>
+    <string name="main_home">首页</string>
+    <string name="main_class">分类</string>
+    <string name="main_shopping">购物车</string>
+    <string name="main_center">用户中心</string>
+    <string name="about_us">\t\t友阿农博汇www.hnmall.com是由深交所上市公司湖南友谊阿波罗商业股份有限
+        公司（股票代码：002277 股票简称：友阿股份）投资建设，在湖南省政府及省经信委、省农委、省商务厅、
+        省供销合作总社等政府职能部门支持下打造的B2B2C特色农产品网络购物平台。作为友阿有啊O2O大平台的重
+        要组成部分，友阿农博汇云集了全国各地知名农副产品、地方特产、休闲食品、日化用品、文化工艺品等，
+        将是全省乃至全国所有农产品的购物平台。通过互联网，它将被打造成全面造福广大消费者、永不谢幕的“农博会”。
+        \n\t\t友阿农博汇依托母公司友阿股份的品牌价值，及其线上线下数百万会员的稳定客户资源和多渠道推广资源，向外
+        界推广中国的农副产品和传统文化。
+        \n\t\t友阿农博汇涵盖粮油米面、调味调料、生鲜蔬果、茗茶名酒等数以万计的各类农副产品，将给予消费者充分的选择
+        空间。丰富的产品、详尽的说明、优质低价的商品销售策略、不变的服务至上承诺，能满足个人购物、团体购买
+        以及单位采购等不同用户的需求。友阿股份多年以来一直是全国十佳诚信单位，坚持诚信经营也是友阿股份不变的追求。
+        作为友阿诚信经营在互联网的延续，友阿农博汇将一如既往的坚持诚信，严格把关，将质量最好的产品带给消费者。</string>
+    <string name="enter_goods">请输入所搜索的商品</string>
+    <string name="version_number_is_wrong">版本号错误</string>
+    <string name="loading">玩命加载中</string>
+    <string name="loading_data_fail">加载数据失败</string>
+    <string name="network_is_not_good">网络状况不佳，请检查网络！</string>
+    <string name="unable_to_get_data">无法获取数据</string>
+    <string name="no_more_data">没有更多的数据了</string>
+    <string name="no_more_order">没有更多的订单数据了</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_white_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/icon_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="拼团抽奖规则"
+            android:textColor="@color/paleRed"
+            android:textSize="@dimen/font_size_middle" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/paleRed"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_str1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_str2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_str3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_str4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="130dp"
+        android:padding="10dp"
+        android:onClick="back"
+        android:src="@drawable/icon_cancel" />
+
+</RelativeLayout>

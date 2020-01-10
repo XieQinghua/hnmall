@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--字体小、中、正常、大、特大-->
+    <dimen name="font_size_small">10sp</dimen>
+    <dimen name="font_size_middle">12sp</dimen>
+    <dimen name="font_size_normal">14sp</dimen>
+    <dimen name="font_size_big">16sp</dimen>
+    <dimen name="font_size_large">20sp</dimen>
+    <!--title高度-->
+    <dimen name="height_top_bar">45dp</dimen>
+    <!--button-->
+    <dimen name="button_top_bar">35dp</dimen>
+    <dimen name="dp">1dp</dimen>
+    <dimen name="icon_padding">10dp</dimen>
+</resources>

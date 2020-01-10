@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--遮罩黑色-->
+    <color name="mask_black">#30000000</color>
+    <!--红色-->
+    <color name="red">#ff0000</color>
+    <!--主题红色-->
+    <color name="nbhRed">#E71F19</color>
+    <!--搜素框深红色背景-->
+    <color name="darkRed">#8F060D</color>
+    <!--浅红色-->
+    <color name="paleRed">#ea5154</color>
+    <!--橙色-->
+    <color name="orange">#fe9b46</color>
+    <!--深灰-->
+    <color name="darkGray">#939393</color>
+    <!--tab选中颜色-->
+    <color name="tabSelectedTextColor">#F9481A</color>
+
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+    <!--画布灰色-->
+    <color name="canvasGray">#EFEFEF</color>
+    <!--分隔线颜色-->
+    <color name="divide_line">#EAEAEC</color>
+    <!--蓝色-->
+    <color name="blue">#0000FF</color>
+    <!--紫色-->
+    <color name="purple">#8D1B8D</color>
+    <!--导航条灰色背景颜色-->
+    <color name="nav_gray_bg">#333333</color>
+    <!--导航条橙色背景颜色-->
+    <color name="nav_orange_bg">#FE6404</color>
+    <!--标题，昵称-->
+    <color name="mall_title_color">#FF000000</color>
+    <!--次标题颜色-->
+    <color name="mall_secondary_title">#C5000000</color>
+    <!--主题内容-->
+    <color name="mall_content_color">#606060</color>
+    <!--次要展示信息-->
+    <color name="mall_secondary_content">#80000000</color>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_dash_line_shape"
+        android:padding="5dp">
+
+        <com.your.mall.view.CircleImageView
+            android:id="@+id/iv_head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_default_person" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_head_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_goods_img"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_goods_img"
+                android:textColor="@color/paleRed"
+                android:textSize="@dimen/font_size_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_prize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:ems="15"
+            android:textColor="@color/paleRed"
+            android:textSize="@dimen/font_size_small" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_layout_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_pintuan_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_goods_banner"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icon_padding"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_goods_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="红富士"
+                    android:textColor="@color/mall_title_color"
+                    android:textSize="@dimen/font_size_middle" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/icon_padding">
+
+                <TextView
+                    android:id="@+id/tv_str1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支付开团并邀请1人参团，人数不足自动退款，详见下方拼团玩法"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_str2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="快速成团秘籍：支付成功后，请到个人中心-我的团购 中邀请您的好友来参团。"
+                    android:textColor="@color/paleRed"
+                    android:textSize="@dimen/font_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/icon_padding"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_pintuan_buy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_pintuan_group_bg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_activity_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_middle" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pintuan_single_buy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_pintuan_single_bg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_middle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="单独购买 >"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/canvasGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_pintuan_activity_fiow">
+
+                <TextView
+                    android:id="@+id/tv_pintuan_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <View style="@style/Line" />
+
+            <WebView
+                android:id="@+id/wap_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+
+        </LinearLayout>
+    </com.your.mall.view.ElasticityScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_goods_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_default_goods" />
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_toRightOf="@+id/iv_goods_img"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/mall_secondary_title"
+            android:textSize="@dimen/font_size_middle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/paleRed"
+                android:textSize="@dimen/font_size_middle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/mall_secondary_title"
+                android:textSize="@dimen/font_size_middle" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/icon_padding"
+        android:layout_marginRight="@dimen/icon_padding" />
+
+    <RadioGroup
+        android:id="@+id/rg_goods_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/cb_good"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/rate_rb_selector"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/rate_flower_selector"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="好评"
+            android:textColor="@color/rate_tab_text_color"
+            android:textSize="@dimen/font_size_middle"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/cb_neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_rb_selector"
+            android:button="@null"
+            android:drawableLeft="@drawable/rate_flower_selector"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="中评"
+            android:textColor="@color/rate_tab_text_color"
+            android:textSize="@dimen/font_size_middle"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/cb_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_rb_selector"
+            android:button="@null"
+            android:drawableLeft="@drawable/rate_flower_selector"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="差评"
+            android:textColor="@color/rate_tab_text_color"
+            android:textSize="@dimen/font_size_middle"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_gray_bg"
+        android:gravity="top"
+        android:hint="您的评价对其他买家很有帮助哦"
+        android:minLines="3"
+        android:padding="5dp"
+        android:textColor="@color/mall_content_color"
+        android:textSize="@dimen/font_size_middle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="店铺评分"
+        android:textColor="@color/mall_content_color"
+        android:textSize="@dimen/font_size_normal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品与描述相符"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_middle" />
+
+        <CheckBox
+            android:id="@+id/cb11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家的服务态度"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_middle" />
+
+        <CheckBox
+            android:id="@+id/cb21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家的发货速度"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_middle" />
+
+        <CheckBox
+            android:id="@+id/cb31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流的发货速度"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_middle" />
+
+        <CheckBox
+            android:id="@+id/cb41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/cb45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rate_star_selector"
+            android:button="@null" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_anony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/cancel_order_cb_selector"
+            android:text="是否匿名"
+            android:textColor="@color/mall_content_color"
+            android:textSize="@dimen/font_size_middle" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_red_pressed_shape"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="提  交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_middle"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

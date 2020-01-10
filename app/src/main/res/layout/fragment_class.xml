@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/nbhRed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品分类"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/web_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@drawable/class_tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="友阿果园"
+                android:textColor="@color/class_tab_text_color"
+                android:textSize="@dimen/font_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@drawable/class_tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="食品饮料"
+                android:textColor="@color/class_tab_text_color"
+                android:textSize="@dimen/font_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@drawable/class_tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="进口食品"
+                android:textColor="@color/class_tab_text_color"
+                android:textSize="@dimen/font_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@drawable/class_tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="生鲜粮油"
+                android:textColor="@color/class_tab_text_color"
+                android:textSize="@dimen/font_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@drawable/class_tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="茗茶名酒"
+                android:textColor="@color/class_tab_text_color"
+                android:textSize="@dimen/font_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_bar"
+                android:background="@drawable/class_tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="特色工艺/礼券"
+                android:textColor="@color/class_tab_text_color"
+                android:textSize="@dimen/font_size_normal" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/categroy_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

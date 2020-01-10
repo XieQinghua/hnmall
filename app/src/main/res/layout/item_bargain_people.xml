@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <com.your.mall.view.CircleImageView
+            android:id="@+id/iv_head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_default_person" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_head_img"
+            android:text="苹果"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_nickname"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_goods_img"
+                android:text="砍掉6.71元"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_goods_img"
+                android:text="哈哈“贫贱之交”说的就是我们"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

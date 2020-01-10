@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_head" />
+
+    <TextView
+        android:id="@+id/tv_noaddress"
+        style="@style/mall_normal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/img_noaddress_bg"
+        android:text="暂无收货地址"
+        android:textSize="@dimen/font_size_middle"
+        android:visibility="gone" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_layout_title"
+        android:layout_marginBottom="35dp">
+
+        <com.your.mall.view.MyListView
+            android:id="@+id/lv_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:divider="@color/canvasGray"
+            android:dividerHeight="10dp"
+            android:visibility="visible" />
+    </com.your.mall.view.ElasticityScrollView>
+
+    <Button
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_top_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nbhRed"
+        android:text="添加收货地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_normal" />
+</RelativeLayout>

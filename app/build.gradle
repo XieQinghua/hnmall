@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+android {
+    compileSdkVersion 22
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.hnmall.nbh"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 16
+        versionName "2.0.0"
+//        ndk {
+//            //设置支持的SO库架构
+//            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a', 'mips', 'mips64'
+//        }
+    }
+
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+        abortOnError true
+    }
+
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-annotations:22.2.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.google.code.gson:gson:2.4'
+    //    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:crashreport:2.3.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.xutils:xutils:3.3.4'
+    compile project(':SlidingLibrary')
+    compile 'com.android.support:support-v4:22.2.0'
+    compile files('libs/MobCommons.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/ShareSDK-Core-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.4.jar')
+    compile files('libs/universal-image-loader-1.9.3-with-sources.jar')
+    compile files('libs/volley.jar')
+}
+
+bugly {
+    appId = '900013125'
+    appKey = 'cpbdc7btwSDeO3V7'
+    execute = true
+    upload = true
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray">
+
+
+    <TextView
+        android:id="@+id/tv_no_collect"
+        style="@style/mall_normal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:drawableTop="@drawable/icon_no_collect"
+        android:text="暂无收藏历史"
+        android:textSize="@dimen/font_size_middle"
+        android:visibility="gone" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.your.mall.view.MyListView
+            android:id="@+id/lv_collect_goods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:divider="@color/canvasGray"
+            android:dividerHeight="10dp"/>
+    </com.your.mall.view.ElasticityScrollView>
+
+</RelativeLayout>

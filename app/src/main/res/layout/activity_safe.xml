@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvasGray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head" />
+
+    <com.your.mall.view.ElasticityScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="账户"
+                android:textColor="@color/mall_content_color"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_personage"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/nbhRed"
+                android:textSize="@dimen/font_size_normal" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="@color/canvasGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/mall_normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_vip_card"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:text="账户余额" />
+
+                <TextView
+                    android:id="@+id/tv_deposit"
+                    style="@style/mall_normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="@color/canvasGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/mall_normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_address"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:text="账户积分" />
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    style="@style/mall_normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="@color/canvasGray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="安全"
+                android:textColor="@color/mall_content_color"
+                android:textSize="@dimen/font_size_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/mall_normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_more_telephone"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:text="手机号码" />
+
+                <TextView
+                    android:id="@+id/tv_phone_number"
+                    style="@style/mall_normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="@color/canvasGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/mall_normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_order"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:text="注册时间" />
+
+                <TextView
+                    android:id="@+id/tv_register_time"
+                    style="@style/mall_normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="@color/canvasGray" />
+
+            <TextView
+                android:id="@+id/tv_change_passwords"
+                style="@style/mall_normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_safe"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="修改登录密码" />
+
+            <TextView
+                android:id="@+id/tv_test"
+                style="@style/mall_normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_safe"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="测试入口"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </com.your.mall.view.ElasticityScrollView>
+</LinearLayout>

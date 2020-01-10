@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_goods_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拼团抽奖奖品2"
+                android:textColor="@color/mall_title_color"
+                android:textSize="@dimen/font_size_middle" />
+
+            <TextView
+                android:id="@+id/tv_goods_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="拼团抽奖奖品"
+                android:textColor="@color/mall_content_color"
+                android:textSize="@dimen/font_size_small" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_pintuan_head"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="2人团"
+                    android:textColor="@color/mall_title_color"
+                    android:textSize="@dimen/font_size_middle" />
+
+                <TextView
+                    android:id="@+id/tv_activity_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="￥0.01"
+                    android:textColor="@color/mall_title_color"
+                    android:textSize="@dimen/font_size_middle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="￥49.00"
+                    android:textColor="@color/mall_content_color"
+                    android:textSize="@dimen/font_size_middle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll1"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_palered_rectangle_shape"
+                android:gravity="center"
+                android:text="抽奖"
+                android:textColor="@color/paleRed"
+                android:textSize="@dimen/font_size_middle"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_red_pressed_shape"
+                android:gravity="center"
+                android:text="去拼团 >"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_middle" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

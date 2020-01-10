@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+        'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head runat='server'>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <!--gb2312-->
+</head>
+<style>
+    html,body{
+        font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/
+    }
+    .base_box{
+        max-width:640px;
+        min-width:320px;
+        height:auto;
+        margin:30% auto;
+        
+        display: block;
+    }
+    .base_box p{
+        text-align:center;
+    }
+    .info_1{
+        color:#8D1B8D;
+        font-size:1.6rem;
+    }
+    .info_2{
+        color:#606060;
+        font-size:1.4rem;
+    }
+    .base_box p span{
+        display:inline-block;
+        margin-top:1rem;
+        width:60%;
+        font-size:1.4rem;
+        background-color:#fff;
+        border:1px solid #ccc;
+        border-radius:5px;
+        color:#606060;
+        padding:0.8rem 0;
+    }
+
+</style>
+<body>
+<div class="base_box">
+    <p><img src="img_network_error.png" width="25%"/></p>
+    <p class="info_1">数据加载失败</p>
+    <p class="info_2">请检查您的手机是否联网，点击按钮重新加载</p>
+    <p><span onClick="show()">重新加载</span></p>
+
+</div>
+<script type='text/javascript'>
+
+    function show() {
+        javascript:android.Reload();
+    }
+
+</script>
+
+</body>
+</html>
